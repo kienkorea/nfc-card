@@ -24,7 +24,7 @@ const readFile = file => {
 
 const getBackgrounds = () => {
   const backgrounds = [
-    "/imgs/1.jpeg", "/imgs/2.jpeg", "/imgs/3.jpeg", "/imgs/4.jpeg", "/imgs/5.jpeg", "/imgs/6.jpeg"
+    "/imgs/0.png","/imgs/1.jpeg", "/imgs/2.jpeg", "/imgs/3.jpeg", "/imgs/4.jpeg", "/imgs/5.jpeg", "/imgs/6.jpeg"
   ];
 
   return Promise.all(backgrounds.map(bg => toDataURL(bg)));
@@ -45,14 +45,14 @@ const app = new Vue({
   el: "#app",
   data: {
     showLogo: true,
-    logo: "/imgs/logo.png",
+    logo: "/imgs/vikof_logo.jpg",
     logoSize: 250,
 
-    url: "https://linktr.ee/codedao",
+    url: "https://beacons.ai/tranduyquang",
     qrCode: undefined,
     qrSize: 275,
 
-    name: "Phạm Huy Hoàng",
+    name: "Vikof Mobile",
     fontSize: 85,
     fonts: fonts,
     font: fonts[0],
